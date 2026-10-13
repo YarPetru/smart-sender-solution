@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from '@/app/App'
 import '@/app/index.css'
+import { wireSessionExpiry } from '@/app/session-expiry'
 
 async function enableMocking(): Promise<void> {
   if (import.meta.env.VITE_ENABLE_MOCKS === 'false') {
@@ -24,4 +25,5 @@ function renderApp(): void {
 }
 
 await enableMocking()
+wireSessionExpiry()
 renderApp()

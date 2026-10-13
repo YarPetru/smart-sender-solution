@@ -93,6 +93,10 @@ export function isNotFound(error: unknown): error is ApiError {
   return isApiError(error) && error.status === 404
 }
 
+export function getErrorMessage(error: unknown): string {
+  return isApiError(error) ? error.message : 'Something went wrong. Please try again.'
+}
+
 export function isAbortError(error: unknown): boolean {
   return error instanceof DOMException && error.name === 'AbortError'
 }
