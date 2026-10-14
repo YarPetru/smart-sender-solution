@@ -3,7 +3,7 @@
 A small SPA for the Smart Sender frontend test task: sign in, browse webhooks, edit one.
 There's no real backend. The API is mocked with MSW according to the contract.
 
-**Live demo:** https://smart-sender-solution.vercel.app
+**Live demo:** https://smart-sender-solution-one.vercel.app/
 
 Test account: `demo@smartsender.com` / `passme123`
 

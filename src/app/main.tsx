@@ -8,8 +8,8 @@ async function enableMocking(): Promise<void> {
   if (import.meta.env.VITE_ENABLE_MOCKS === 'false') {
     return
   }
-  const { worker } = await import('@/mocks/browser')
-  await worker.start({ onUnhandledRequest: 'bypass', quiet: true })
+  const { startMockWorker } = await import('@/mocks/browser')
+  await startMockWorker()
 }
 
 function renderApp(): void {
