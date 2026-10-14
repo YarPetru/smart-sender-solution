@@ -4,8 +4,8 @@ type MockUser = Me & { password: string }
 
 export const mockUser: MockUser = {
   id: 'usr_1',
-  email: 'demo@smartsender.test',
-  password: 'password123',
+  email: 'demo@smartsender.com',
+  password: 'passme123',
   first_name: 'Demo',
   last_name: 'User',
   name: 'Demo User',
