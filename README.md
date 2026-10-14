@@ -5,7 +5,7 @@ There's no real backend. The API is mocked with MSW according to the contract.
 
 **Live demo:** https://smart-sender-solution.vercel.app
 
-Test account: `demo@smartsender.test` / `password123`
+Test account: `demo@smartsender.com` / `passme123`
 
 ## Running it
 
